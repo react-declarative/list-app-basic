@@ -1,0 +1,13 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently -n start:client,start:server",
+    "start:client": "cd packages/client && npm start",
+    "start:server": "cd packages/server && npm start",
+    "install": "sh ./scripts/install.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
