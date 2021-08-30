@@ -136,8 +136,7 @@ export const ListPage = () => {
     await fetch(`${CC_ORIGIN}/crud/${id}`, {
       method: 'DELETE',
     });
-    debugger
-    apiRef.current?.reload();
+    await apiRef.current?.reload();
   };
 
   return (
@@ -157,6 +156,7 @@ export const ListPage = () => {
       onRowAction={remove}
       onRowClick={click}
       onAction={create}
+      sizeByParent={false}
     />
   );
 };
