@@ -153,18 +153,20 @@ export const OnePage = ({
   };
 
   return (
-    <Container>
-      <Breadcrumbs
-        disabled={!data}
-        onSave={handleSave}
-        onBack={handleBack}
-      />
-      <OneTyped<IPerson>
-        fields={fields}
-        handler={handler}
-        change={handleChange}
-      />
-    </Container>
+    <div style={{width: '100vw'}}>
+      <Container>
+        <Breadcrumbs
+          disabled={!data}
+          onSave={handleSave}
+          onBack={handleBack}
+        />
+        <OneTyped<IPerson>
+          fields={fields}
+          handler={handler}
+          change={handleChange}
+        />
+      </Container>
+    </div>
   );
 };
 
