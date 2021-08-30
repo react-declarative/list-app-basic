@@ -71,7 +71,7 @@ const actions: IListAction[] = [
     type: ActionType.Menu,
     options: [
       {
-        label: 'Add row',
+        label: 'Create new person',
         icon: Add,
       }
     ]
@@ -80,7 +80,7 @@ const actions: IListAction[] = [
 
 const rowActions = [
   {
-    label: 'Remove action',
+    label: 'Remove person',
     action: 'remove-action',
     icon: Delete,
   },

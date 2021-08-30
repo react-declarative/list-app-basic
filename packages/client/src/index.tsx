@@ -1,5 +1,6 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { SnackbarProvider } from 'notistack';
 
 import { Route, redirect } from 'react-micro-router';
 import { Scaffold, IMenuGroup } from 'react-declarative';
@@ -17,16 +18,23 @@ const options: IMenuGroup[] = [
 const App = () => {
   const handleNavigate = () => redirect('/');
   return (
-    <Scaffold onOptionClick={handleNavigate} options={options}>
-      <Route path="/">
-        <Route path="/" exact>
-          <ListPage />
+    <SnackbarProvider
+      anchorOrigin={{
+        vertical: 'bottom',
+        horizontal: 'center',
+      }}
+    >
+      <Scaffold onOptionClick={handleNavigate} options={options}>
+        <Route path="/">
+          <Route path="/" exact>
+            <ListPage />
+          </Route>
+          <Route path="/([a-z0-9\-]+)">
+            <OnePage />
+          </Route>
         </Route>
-        <Route path="/([a-z0-9\-]+)">
-          <OnePage />
-        </Route>
-      </Route>
-    </Scaffold>
+      </Scaffold>
+    </SnackbarProvider>
   );
 };
 
