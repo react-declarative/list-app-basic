@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "concurrently": "^6.2.1"
+  },
+  "dependencies": {
+    "react-declarative": "^1.5.15"
   }
 }
