@@ -8,15 +8,13 @@ import {
 } from 'react-declarative';
 
 import { redirect } from 'react-micro-router';
-
-import Container from '@material-ui/core/Container';
+import { useSnackbar } from 'notistack';
 
 import IPerson from '../model/IPerson';
 
 import uuidv4 from '../utils/uuidv4';
 
 import { CC_ORIGIN } from '../config';
-import { useSnackbar } from 'notistack';
 
 const fields: TypedField<IPerson>[] = [
   {
@@ -153,19 +151,17 @@ export const OnePage = ({
   };
 
   return (
-    <div style={{width: '100vw'}}>
-      <Container>
-        <Breadcrumbs
-          disabled={!data}
-          onSave={handleSave}
-          onBack={handleBack}
-        />
-        <OneTyped<IPerson>
-          fields={fields}
-          handler={handler}
-          change={handleChange}
-        />
-      </Container>
+    <div style={{ width: 'calc(100vw - 20px)' }}>
+      <Breadcrumbs
+        disabled={!data}
+        onSave={handleSave}
+        onBack={handleBack}
+      />
+      <OneTyped<IPerson>
+        fields={fields}
+        handler={handler}
+        change={handleChange}
+      />
     </div>
   );
 };
