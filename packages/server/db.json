@@ -1,42 +1,6 @@
 {
   "crud": [
     {
-      "id": "2f26e37a-8a8b-48cb-9ec4-95700a600446",
-      "age": "67065",
-      "firstName": "Aileen",
-      "lastName": "Goyette"
-    },
-    {
-      "id": "569b3045-cc24-4b46-8e42-a793836f05c2",
-      "age": "9509",
-      "firstName": "Justus",
-      "lastName": "Batz"
-    },
-    {
-      "id": "eb5f4ec8-3718-46ac-81b8-746259e54c37",
-      "age": "11530",
-      "firstName": "Emilie",
-      "lastName": "Lesch"
-    },
-    {
-      "id": "b48eaaef-8d6b-4dc7-85c8-62683589bc4d",
-      "age": "72775",
-      "firstName": "Manley",
-      "lastName": "Ebert"
-    },
-    {
-      "id": "3e09ec2d-50ea-4327-9527-913fde99d459",
-      "age": "90347",
-      "firstName": "Antoinette",
-      "lastName": "Schimmel"
-    },
-    {
-      "id": "801e4ffa-ef2e-409c-a786-944bab3119e5",
-      "age": "65463",
-      "firstName": "Amelia",
-      "lastName": "Brakus"
-    },
-    {
       "id": "ea7f4960-68e4-4c7b-ae38-37ec11d72679",
       "age": "65012",
       "firstName": "Kay",

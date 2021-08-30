@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/" exact>
           <ListPage />
         </Route>
-        <Route path="/([a-z]+)">
+        <Route path="/([a-z0-9\-]+)">
           <OnePage />
         </Route>
       </Route>
